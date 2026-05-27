@@ -120,7 +120,7 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
             <div className="lg:col-span-6">
               <div className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-lg relative group">
                 <img 
-                  src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" 
                   alt="Antología de diseño Arnelio Cruz"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
                 />
@@ -162,7 +162,7 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
             <div className="lg:col-span-6 lg:order-1">
               <div className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-lg relative group">
                 <img 
-                  src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80&w=1200&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1560506840-ec74fad83016?q=80&w=1200&auto=format&fit=crop" 
                   alt="Diseños de Comunión y Ceremonia Infantil Arnelio Cruz"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
                 />
