@@ -1,0 +1,10 @@
+{
+  "name": "AC Couture",
+  "description": "Alta costura tradicional y diseño artesano a medida por Arnelio Cruz Modisto desde Villarta de San Juan.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
