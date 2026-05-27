@@ -66,7 +66,7 @@ export default function Fantasy() {
             <button 
               type="button"
               onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-3 bg-brand-navy border border-brand-navy text-white hover:bg-brand-accent hover:text-brand-navy rounded-full font-sans text-[10px] uppercase tracking-[0.2em] transition-all duration-300 shadow-md inline-block cursor-pointer pointer-events-auto text-center"
+              className="px-10 py-3.5 bg-brand-navy border-[0.5px] border-brand-navy text-white hover:bg-transparent hover:text-brand-navy rounded-none font-sans text-[10px] uppercase tracking-[0.25em] transition-all duration-300 shadow-sm inline-block cursor-pointer pointer-events-auto text-center"
             >
               Cuéntame tu idea artística
             </button>

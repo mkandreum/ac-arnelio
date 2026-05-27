@@ -59,7 +59,7 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.3em] font-medium text-brand-navy block bg-brand-accent/10 px-3 py-1.5 rounded-full inline-block">
+            <span className="font-sans text-[10px] uppercase tracking-[0.25em] font-medium text-brand-navy block border-[0.5px] border-brand-accent/50 bg-brand-accent/10 px-4 py-2 rounded-none inline-block">
               "Crecí rodeado de hilos y botones"
             </span>
 
@@ -93,7 +93,7 @@ export default function About() {
                   <span>Confección a medida</span>
                   <span>100%</span>
                 </div>
-                <div className="w-full h-[3px] bg-brand-accent/25 rounded-full overflow-hidden">
+                <div className="w-full h-[2px] bg-brand-accent/20 rounded-none overflow-hidden">
                   <motion.div 
                     className="h-full bg-brand-navy"
                     initial={{ width: 0 }}
@@ -110,7 +110,7 @@ export default function About() {
                   <span>Innovación en Diseño</span>
                   <span>100%</span>
                 </div>
-                <div className="w-full h-[3px] bg-brand-accent/25 rounded-full overflow-hidden">
+                <div className="w-full h-[2px] bg-brand-accent/20 rounded-none overflow-hidden">
                   <motion.div 
                     className="h-full bg-brand-navy"
                     initial={{ width: 0 }}
@@ -127,7 +127,7 @@ export default function About() {
                   <span>Compromiso Artesano</span>
                   <span>100%</span>
                 </div>
-                <div className="w-full h-[3px] bg-brand-accent/25 rounded-full overflow-hidden">
+                <div className="w-full h-[2px] bg-brand-accent/20 rounded-none overflow-hidden">
                   <motion.div 
                     className="h-full bg-brand-navy"
                     initial={{ width: 0 }}
@@ -151,7 +151,7 @@ export default function About() {
               ].map((tag, idx) => (
                 <span 
                   key={idx} 
-                  className="px-3.5 py-1.5 border-[0.5px] border-brand-navy/15 text-brand-gray font-sans text-[11px] rounded-full hover:border-brand-navy hover:text-brand-navy transition-colors duration-300"
+                  className="px-3.5 py-1.5 border-[0.5px] border-brand-navy/15 text-brand-gray font-sans text-[11px] rounded-none hover:border-brand-navy hover:text-brand-navy transition-colors duration-300"
                 >
                   {tag}
                 </span>
@@ -240,7 +240,7 @@ export default function About() {
                 transition={{ duration: 1.4, delay: 0.3 }}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e?auto=format&fit=crop&q=80&w=800"
                   alt="Detalle de costura y taller artesanal" 
                   className="w-full h-full object-cover rounded-sm border-[0.5px] border-brand-black/5 shadow-xl grayscale contrast-115"
                 />
@@ -268,7 +268,7 @@ export default function About() {
             <button 
               type="button"
               onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-brand-navy text-white hover:bg-brand-accent hover:text-brand-navy font-sans text-[10px] uppercase tracking-[0.2em] rounded-full shadow-md transition-all duration-300 pointer-events-auto cursor-pointer"
+              className="px-10 py-4 border-[0.5px] border-brand-navy bg-brand-navy text-white hover:bg-transparent hover:text-brand-navy font-sans text-[10px] uppercase tracking-[0.25em] rounded-none transition-all duration-300 pointer-events-auto cursor-pointer shadow-sm"
             >
               Consultar cita / Contacto
             </button>

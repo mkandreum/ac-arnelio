@@ -110,7 +110,7 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
               <div className="pt-2">
                 <button 
                   onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-brand-navy text-white hover:bg-brand-accent hover:text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.2em] rounded-full shadow-sm cursor-pointer pointer-events-auto"
+                  className="px-6 py-3.5 bg-brand-navy border-[0.5px] border-brand-navy text-white hover:bg-transparent hover:text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.25em] rounded-none shadow-sm cursor-pointer pointer-events-auto"
                 >
                   Confección a medida
                 </button>
@@ -152,7 +152,7 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
               <div className="pt-2">
                 <button 
                   onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-brand-navy hover:bg-brand-navy hover:text-white text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.2em] rounded-full cursor-pointer pointer-events-auto"
+                  className="px-6 py-3.5 border-[0.5px] border-brand-navy hover:bg-brand-navy hover:text-white text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.25em] rounded-none cursor-pointer pointer-events-auto"
                 >
                   Ver más / Solicitar cita
                 </button>
@@ -160,12 +160,61 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
             </div>
             
             <div className="lg:col-span-6 lg:order-1">
-              <div className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-lg relative group">
-                <img 
-                  src="https://images.unsplash.com/photo-1560506840-ec74fad83016?q=80&w=1200&auto=format&fit=crop" 
-                  alt="Diseños de Comunión y Ceremonia Infantil Arnelio Cruz"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
-                />
+              <div className="grid grid-cols-12 gap-3 md:gap-4 relative">
+                {/* Image A: Main elegant child dress outdoors (Linen communion vibe) */}
+                <div className="col-span-7 aspect-[3/4] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-md relative group">
+                  <img 
+                    src="https://images.unsplash.com/photo-1505673542670-a14e28b139f2?q=80&w=1000&auto=format&fit=crop" 
+                    alt="Colección Comunión Arnelio Cruz - Vestido Ceremonial blanco rústico chic"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                  />
+                  <div className="absolute top-3 left-3 bg-white/85 backdrop-blur-sm px-2.5 py-1 pointer-events-none border-[0.5px] border-brand-navy/10">
+                    <span className="font-sans text-[8px] uppercase tracking-widest text-brand-navy font-semibold">Couture I</span>
+                  </div>
+                </div>
+
+                <div className="col-span-5 flex flex-col justify-between gap-3 md:gap-4">
+                  {/* Image B: Lace close up detail */}
+                  <div className="aspect-square overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-sm relative group">
+                    <img 
+                      src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?q=80&w=800&auto=format&fit=crop" 
+                      alt="Detalle de encaje y costura ceremonial"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                    />
+                    <div className="absolute top-3 left-3 bg-white/85 backdrop-blur-sm px-2.5 py-1 pointer-events-none border-[0.5px] border-brand-navy/10">
+                      <span className="font-sans text-[8px] uppercase tracking-widest text-brand-navy font-semibold">Encaje</span>
+                    </div>
+                  </div>
+
+                  {/* Image C: Delicate back bow / flower ribbon */}
+                  <div className="aspect-[4/3] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-sm relative group">
+                    <img 
+                      src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800&auto=format&fit=crop" 
+                      alt="Detalle de flor artificial y cintas en traje de ceremonia"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                    />
+                    <div className="absolute top-3 left-3 bg-white/85 backdrop-blur-sm px-2.5 py-1 pointer-events-none border-[0.5px] border-brand-navy/10">
+                      <span className="font-sans text-[8px] uppercase tracking-widest text-brand-navy font-semibold">Detalles</span>
+                    </div>
+                  </div>
+
+                  {/* Image D: Hanging ceremony dresses / collection row */}
+                  <div className="aspect-[4/5] overflow-hidden bg-brand-accent/5 border-[0.5px] border-brand-black/10 shadow-sm relative group">
+                    <img 
+                      src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&w=800&auto=format&fit=crop" 
+                      alt="Colección Ceremonias Infantiles Arnelio Cruz"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                    />
+                    <div className="absolute top-3 left-3 bg-white/85 backdrop-blur-sm px-2.5 py-1 pointer-events-none border-[0.5px] border-brand-navy/10">
+                      <span className="font-sans text-[8px] uppercase tracking-widest text-brand-navy font-semibold">Couture II</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Overlaid styling element simulating needle measurements */}
+                <div className="absolute -bottom-2 -left-2 bg-brand-bg border-[0.5px] border-brand-black/15 px-3 py-1 text-center select-none pointer-events-none hidden sm:block">
+                  <span className="font-mono text-[8px] uppercase tracking-[0.2em] text-brand-gray">Patrón Nº 08 / AC</span>
+                </div>
               </div>
             </div>
           </div>
@@ -195,7 +244,7 @@ export default function Catalog({ onSelectDress }: CatalogProps) {
               <div className="pt-2">
                 <button 
                   onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-brand-navy hover:bg-brand-navy hover:text-white text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.2em] rounded-full cursor-pointer pointer-events-auto"
+                  className="px-6 py-3.5 border-[0.5px] border-brand-navy hover:bg-brand-navy hover:text-white text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.25em] rounded-none cursor-pointer pointer-events-auto"
                 >
                   Ver más Colecciones
                 </button>

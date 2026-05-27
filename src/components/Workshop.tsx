@@ -4,22 +4,22 @@ import { motion } from 'motion/react';
 export default function Workshop() {
   const images = [
     {
-      src: 'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=1600',
+      src: 'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&q=80&w=1200',
       alt: 'Atelier',
       className: 'col-span-2 md:col-span-2 row-span-2 md:row-span-2 aspect-square md:aspect-auto'
     },
     {
-      src: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=1200',
+      src: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=1200',
       alt: 'Bocetos',
       className: 'col-span-1 md:col-span-1 row-span-1 md:row-span-1 aspect-[4/3] md:aspect-auto'
     },
     {
-      src: 'https://images.unsplash.com/photo-1509631179647-0c114514616c?auto=format&fit=crop&q=80&w=1200',
+      src: 'https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&fit=crop&q=80&w=1200',
       alt: 'Costura',
       className: 'col-span-1 md:col-span-1 row-span-1 md:row-span-1 aspect-[4/3] md:aspect-auto'
     },
     {
-      src: 'https://images.unsplash.com/photo-1485230895905-9af82df3b05a?auto=format&fit=crop&q=80&w=1200',
+      src: 'https://images.unsplash.com/photo-1524230507669-539764a2404c?auto=format&fit=crop&q=80&w=1200',
       alt: 'Texturas',
       className: 'col-span-2 md:col-span-2 row-span-1 md:row-span-1 aspect-[21/9] md:aspect-auto'
     }
@@ -107,7 +107,7 @@ export default function Workshop() {
               <div className="pt-2">
                 <button 
                   onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-brand-navy text-white hover:bg-brand-accent hover:text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.2em] rounded-full shadow-sm cursor-pointer pointer-events-auto inline-block"
+                  className="px-6 py-3.5 bg-brand-navy text-white border-[0.5px] border-brand-navy hover:bg-transparent hover:text-brand-navy transition-all duration-300 font-sans text-[9px] uppercase tracking-[0.25em] rounded-none shadow-sm cursor-pointer pointer-events-auto inline-block"
                 >
                   Inspírate con nuestra colección
                 </button>

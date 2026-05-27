@@ -180,7 +180,7 @@ export default function ContactForm() {
                 <div className="flex justify-start pt-4">
                   <button 
                     type="submit"
-                    className="px-12 py-5 bg-brand-navy text-white font-sans text-[9px] uppercase tracking-[0.25em] rounded-full hover:bg-brand-accent hover:text-brand-navy transition-all duration-350 shadow-md"
+                    className="px-12 py-5 bg-brand-navy text-white border-[0.5px] border-brand-navy font-sans text-[9px] uppercase tracking-[0.25em] rounded-none hover:bg-transparent hover:text-brand-navy transition-all duration-350 shadow-sm"
                   >
                     Enviar Mensaje
                   </button>

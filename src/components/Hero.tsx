@@ -70,13 +70,13 @@ export default function Hero({ onScrollToCatalog }: HeroProps) {
            <div className="mt-8 md:mt-16 flex flex-row items-center justify-center gap-3 sm:gap-4 z-30 relative pointer-events-auto w-full max-w-md px-4">
              <button
                onClick={onScrollToCatalog}
-               className="flex-1 sm:flex-none px-6 md:px-10 py-3.5 md:py-5 bg-brand-navy text-white font-sans text-[9px] md:text-[10px] uppercase tracking-[0.25em] rounded-full hover:bg-brand-accent hover:text-brand-navy transition-all duration-350 shadow-md cursor-pointer text-center font-medium"
+               className="flex-1 sm:flex-none px-6 md:px-10 py-3.5 md:py-5 bg-brand-navy text-white font-sans text-[9px] md:text-[10px] uppercase tracking-[0.25em] rounded-none border-[0.5px] border-brand-navy hover:bg-transparent hover:text-brand-navy transition-all duration-350 shadow-sm cursor-pointer text-center font-medium"
              >
                Ver más
              </button>
              <button
                onClick={() => document.getElementById('medida')?.scrollIntoView({ behavior: 'smooth' })}
-               className="flex-1 sm:flex-none px-6 md:px-10 py-3.5 md:py-5 bg-white/90 border-[0.5px] border-brand-navy text-brand-navy font-sans text-[9px] md:text-[10px] uppercase tracking-[0.25em] rounded-full hover:bg-brand-navy hover:text-white transition-all duration-350 backdrop-blur-sm cursor-pointer text-center font-semibold"
+               className="flex-1 sm:flex-none px-6 md:px-10 py-3.5 md:py-5 bg-white/90 border-[0.5px] border-brand-navy text-brand-navy font-sans text-[9px] md:text-[10px] uppercase tracking-[0.25em] rounded-none hover:bg-brand-navy hover:text-white transition-all duration-350 backdrop-blur-sm cursor-pointer text-center font-semibold"
              >
                Consígalo ahora
              </button>

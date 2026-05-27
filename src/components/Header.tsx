@@ -66,13 +66,34 @@ export default function Header() {
 
         {/* Desktop Nav - visible on large screens */}
         <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-          <button onClick={scrollToTop} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Home</button>
-          <button onClick={() => scrollToSection('arnelio-cruz')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Arnelio Cruz</button>
-          <button onClick={() => scrollToSection('coleccion')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Colecciones</button>
-          <button onClick={() => scrollToSection('proceso')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Proceso</button>
-          <button onClick={() => scrollToSection('fantasia')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Fantasía</button>
-          <button onClick={() => scrollToSection('eventos')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy hover:font-bold transition-all py-1 cursor-pointer font-medium">Eventos</button>
-          <button onClick={() => scrollToSection('medida')} className="font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy hover:text-brand-navy font-bold hover:tracking-[0.23em] transition-all py-1 cursor-pointer animate-pulse">Contacto</button>
+          <button onClick={scrollToTop} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Home
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('arnelio-cruz')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Arnelio Cruz
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('coleccion')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Colecciones
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('proceso')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Proceso
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('fantasia')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Fantasía
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('eventos')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy/80 hover:text-brand-navy transition-all py-1 cursor-pointer font-medium group">
+            Eventos
+            <span className="absolute bottom-0 left-0 w-full h-[0.5px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
+          <button onClick={() => scrollToSection('medida')} className="relative font-sans text-[10px] uppercase tracking-[0.2em] text-brand-navy hover:text-brand-navy transition-all py-1 cursor-pointer font-semibold group">
+            Contacto
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-brand-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+          </button>
         </nav>
 
         {/* Elegant Spacer or Micro-Detail on Desktop */}

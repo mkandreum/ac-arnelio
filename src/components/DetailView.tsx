@@ -99,7 +99,7 @@ export default function DetailView({ dress, onClose }: DetailViewProps) {
           <div className="flex flex-col space-y-4">
             <button 
               onClick={onClose}
-              className="w-full py-4 bg-brand-navy text-white font-sans text-[10px] uppercase tracking-[0.2em] rounded-full hover:bg-brand-accent transition-colors shadow-md"
+              className="w-full py-4.5 bg-brand-navy border-[0.5px] border-brand-navy text-white font-sans text-[10px] uppercase tracking-[0.25em] rounded-none hover:bg-transparent hover:text-brand-navy transition-all duration-350 shadow-sm"
             >
               Volver al Catálogo
             </button>
